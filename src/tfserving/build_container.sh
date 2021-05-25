@@ -1,0 +1,1 @@
+docker build -t monet_tf_serving .
