@@ -76,17 +76,3 @@ EXPOSE $GRPC_PORT $REST_PORT
 # Prepare the CMD that will be run on docker run
 USER model-server
 CMD tensorflow_model_server --port=$GRPC_PORT --rest_api_port=$REST_PORT --model_name=$MODEL_NAME --model_base_path=$MODEL_PATH >> /home/logs/server.log
-
-
-
-
-# Tensorflow serving serves the Rest API over the port 8501 but Heroku assigns a 
-# random port when it runs the dyno. This might be a problem if you want to 
-# deploy this container on Heroku 
-
-# Fix because base tf_serving_entrypoint.sh does not take $PORT env variable
-# while $PORT is set by Heroku CMD is required to run on Heroku
-# COPY tf_serving_entrypoint.sh /usr/bin/tf_serving_entrypoint.sh
-# RUN chmod +x /usr/bin/tf_serving_entrypoint.sh
-# ENTRYPOINT []
-# CMD ["/usr/bin/tf_serving_entrypoint.sh"]
