@@ -4,11 +4,7 @@
 
 ## Demo
 
-<<<<<<< HEAD
 ![](CycleGAN_st_demo.gif)
-=======
-![](https://github.com/yueying-teng/streamlit_tfserving_if_monet_loved_dogs_more/blob/master/CycleGAN_st_demo.mov)
->>>>>>> 8a50cca1c28e0c98bb58d95ee1a368dfe1be8ec5
 
 ## How to use
 
