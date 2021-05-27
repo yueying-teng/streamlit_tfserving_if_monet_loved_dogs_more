@@ -4,7 +4,7 @@
 
 ## Demo
 
-![](CycleGAN_st_demo.mov)
+![](https://github.com/yueying-teng/streamlit_tfserving_if_monet_loved_dogs_more/blob/master/CycleGAN_st_demo.mov)
 
 ## How to use
 
