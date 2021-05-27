@@ -4,7 +4,7 @@
 
 ## Demo
 
-![](CycleGAN_st_demo.mov)
+![](CycleGAN_st_demo.gif)
 
 ## How to use
 
